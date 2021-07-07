@@ -1,0 +1,13 @@
+.headerInner_text{
+        font-size:100px;
+        font-weight:bold;
+        color:#07665E;
+        margin:20px;
+        max-width:990px;
+}
+        
+@media(max-width:770px){
+    .headerInner_text{
+        font-size:40px;
+    }
+}
