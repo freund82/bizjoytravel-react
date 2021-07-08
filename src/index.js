@@ -10,7 +10,7 @@ import {createMuiTheme, ThemeProvider} from '@material-ui/core/styles'
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main:"rgba(99, 209, 152, 0.8)",
+      main:"rgba(1, 179, 158, 0.8)",
       light:"#fff",
       
     },
@@ -23,12 +23,18 @@ const theme = createMuiTheme({
     },
   },
   typography: {
+    h1:{
+      fontWeight:"bold",
+      color:"#07665E",
+      lineHeight:1.5,
+    },
     h5: {
       fontSize: "30px",
       color:"#fff"
     },
     h6: {
-      color:"#fff"
+      color:"#fff",
+      lineHeight:1,
     },
     subtitle2: {
       color:"#fff"

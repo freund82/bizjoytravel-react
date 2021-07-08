@@ -8,16 +8,12 @@ body {
   background:url('./MainPage/images/background.jpg') no-repeat;
   background-size:cover;
 }
-
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-
-
-@media(max-width:550px){
-    .headerInner_text{
-      color:red;
-    }
 }

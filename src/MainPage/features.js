@@ -11,7 +11,7 @@ import Box from '@material-ui/core/Box'
 
 const useStyles=makeStyles((theme)=>({
     featuresBack:{
-        background:"rgba(99, 209, 152, 0.8)"
+        background:"rgba(1, 179, 158, 0.8)"
     }
 }));
 
@@ -22,8 +22,8 @@ function Features(){
             <Typography variant="h6" style={{textAlign:"center", padding:"10px", marginBottom:"50px"}}>
             Почему именно мы?
             </Typography>
-            <Grid container spacing={10}>
-                <Grid item xs={3}>
+            <Grid container spacing={6} style={{padding:"10px"}}>
+                <Grid item xs={12} md={3}>
                 <Typography variant="subtitle2" style={{textAlign:"center"}}>
                     Бесплатный подбор тура
                 </Typography>
@@ -34,7 +34,7 @@ function Features(){
                     У нас бесплатный подбор тура
                 </Typography>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} md={3}>
                 <Typography variant="subtitle2" style={{textAlign:"center"}}>
                     Индивидуальный подход
                 </Typography>
@@ -45,7 +45,7 @@ function Features(){
                 К каждому нашему клиенту у нас индивидуальный подход
                 </Typography>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} md={3}>
                 <Typography variant="subtitle2" style={{textAlign:"center"}}>
                     Оперативность Качество
                 </Typography>
@@ -56,7 +56,7 @@ function Features(){
                 Оперативно подберем лучший тур
                 </Typography>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} md={3}>
                 <Typography variant="subtitle2" style={{textAlign:"center"}}>
                     Постоянным клиентам скидки
                 </Typography>
