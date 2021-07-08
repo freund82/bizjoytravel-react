@@ -1,6 +1,5 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
 import Paper from '@material-ui/core/Paper'
 import Box from '@material-ui/core/Box'
@@ -37,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
                             Оставьте заявку и получите скидку
                             </Typography>
                             <TextField name="name" color="secondary" size="small" id="standard-basic" label="Имя" variant="outlined"/>
-                            <TextField name="phone" color="secondary" size="small" id="filled-basic" label="Телефон" variant="outlined"/>
+                            <TextField name="tel" color="secondary" size="small" id="filled-basic" label="Телефон" variant="outlined"/>
                             <TextField name="email" color="secondary" size="small" id="outlined-basic" label="E-mail" variant="outlined"/>
                             <Box style={{textAlign:"center"}}>
                                 <Button className={classes.btnRequest} variant="outlined" color="secondary" type="submit">Оставить заявку</Button>
