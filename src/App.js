@@ -58,22 +58,22 @@ const classes=useStyles()
      <Grid item xs={12} style={{textAlign:"center"}}>
        <Button disableElevation="false" size="large" className={classes.btnCatalog} variant="outlined" color="secondary"><CollectionsIcon></CollectionsIcon>&nbsp; Каталог туров</Button>
      </Grid>
-     <Grid item xs={12} md={3}  style={{textAlign:"center"}}>
+     <Grid item xs={12} sm={6} md={3}  style={{textAlign:"center"}}>
        <Box>
          <img className={classes.photo} src={Turkey} width="100%" height="100%" alt="Turkey"></img>
        </Box>
      </Grid>
-     <Grid item xs={12} md={3} style={{textAlign:"center"}}>
+     <Grid item xs={12} sm={6} md={3} style={{textAlign:"center"}}>
      <Box>
          <img className={classes.photo} src={Egypt} width="100%" height="100%" alt="Egypt"></img>
        </Box>
      </Grid>
-     <Grid item xs={12} md={3} style={{textAlign:"center"}}>
+     <Grid item xs={12} sm={6} md={3} style={{textAlign:"center"}}>
      <Box>
          <img className={classes.photo} src={Greece} width="100%" height="100%" alt="Greece"></img>
        </Box>
      </Grid>
-     <Grid item xs={12} md={3} style={{textAlign:"center"}}>
+     <Grid item xs={12} sm={6} md={3} style={{textAlign:"center"}}>
      <Box>
          <img className={classes.photo} src={Spain} width="100%" height="100%" alt="Spain"></img>
        </Box>

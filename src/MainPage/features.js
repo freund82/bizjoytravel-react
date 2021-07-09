@@ -23,7 +23,7 @@ function Features(){
             Почему именно мы?
             </Typography>
             <Grid container spacing={6} style={{padding:"10px"}}>
-                <Grid item xs={12} md={3}>
+                <Grid item xs={12} sm={6} md={3}>
                 <Typography variant="subtitle2" style={{textAlign:"center"}}>
                     Бесплатный подбор тура
                 </Typography>
@@ -34,7 +34,7 @@ function Features(){
                     У нас бесплатный подбор тура
                 </Typography>
                 </Grid>
-                <Grid item xs={12} md={3}>
+                <Grid item xs={12} sm={6} md={3}>
                 <Typography variant="subtitle2" style={{textAlign:"center"}}>
                     Индивидуальный подход
                 </Typography>
@@ -45,7 +45,7 @@ function Features(){
                 К каждому нашему клиенту у нас индивидуальный подход
                 </Typography>
                 </Grid>
-                <Grid item xs={12} md={3}>
+                <Grid item xs={12} sm={6} md={3}>
                 <Typography variant="subtitle2" style={{textAlign:"center"}}>
                     Оперативность Качество
                 </Typography>
@@ -56,7 +56,7 @@ function Features(){
                 Оперативно подберем лучший тур
                 </Typography>
                 </Grid>
-                <Grid item xs={12} md={3}>
+                <Grid item xs={12} sm={6} md={3}>
                 <Typography variant="subtitle2" style={{textAlign:"center"}}>
                     Постоянным клиентам скидки
                 </Typography>
