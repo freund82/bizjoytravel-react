@@ -5,7 +5,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import Modal from './Modal/Modal'
+
 
 
 
@@ -39,9 +40,9 @@ export default function ButtonAppBar() {
           <Typography variant="h5" className={classes.title} color="secondary">
             Biz Joy Travel
           </Typography>
-          <Button color="secondary">+7 (909)681-58-12</Button>
+          <Button color="secondary" style={{marginTop:"3px"}}>+7 (909)681-58-12</Button>
           <IconButton edge="start" className={classes.menuButton} color="secondary" aria-label="menu">
-            <MenuIcon />
+            <Modal></Modal>
           </IconButton>
         </Toolbar>
       </AppBar>
