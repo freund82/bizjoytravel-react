@@ -10,6 +10,7 @@
     justify-content: center;
     padding-top:5rem;
     color:#fff;
+    z-index:5000;
 }
 .modal-body{
     padding:5px;

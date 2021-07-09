@@ -1,5 +1,4 @@
 import React from 'react'
-import {BrowserRouter as Router, Link} from 'react-router-dom'
 import ButtonAppBar from './MainPage/AppBar'
 import HeaderInner from './MainPage/headerInner/headerInner'
 import Form from './MainPage/form'
@@ -17,6 +16,7 @@ import Features from './MainPage/features'
 import { Typography } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField'
 import Footer from './MainPage/Footer'
+
 
 
 
@@ -56,14 +56,7 @@ const classes=useStyles()
        <Form></Form>
      </Grid>
      <Grid item xs={12} style={{textAlign:"center"}}>
-        <Router>
-        <Link to="https://yandex.ru/">
-         <Button disableElevation="false" size="large" className={classes.btnCatalog} variant="outlined" color="secondary"><CollectionsIcon></CollectionsIcon>&nbsp; Каталог туров</Button>
-         </Link>
-        </Router>
-        
-     
-       
+       <Button disableElevation="false" size="large" className={classes.btnCatalog} variant="outlined" color="secondary"><CollectionsIcon></CollectionsIcon>&nbsp; Каталог туров</Button>
      </Grid>
      <Grid item xs={12} md={3}  style={{textAlign:"center"}}>
        <Box>
