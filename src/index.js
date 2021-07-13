@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {createMuiTheme, ThemeProvider} from '@material-ui/core/styles'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Catalog from './catalog'
 
 
 
@@ -42,11 +44,20 @@ const theme = createMuiTheme({
   },
 });
 
+
+
+
+
 ReactDOM.render(
   <React.StrictMode>
+    <BrowserRouter>
     <ThemeProvider theme={theme}>
-    <App />
+    <Switch>
+         <Route exact path="/test" component={App}/>
+         <Route exact path="/test/catalog" component={Catalog}/>
+    </Switch>
     </ThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

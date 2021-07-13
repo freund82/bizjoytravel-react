@@ -16,6 +16,8 @@ import Features from './MainPage/features'
 import { Typography } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField'
 import Footer from './MainPage/Footer'
+import {Link} from 'react-router-dom'
+
 
 
 
@@ -29,7 +31,7 @@ const useStyles=makeStyles((theme)=>({
   },
   photo:{
     outline:"10px solid #fff",
-    marginBottom:"55px"
+    marginBottom:"55px",
   },
   btnRequest:{
     background:"#07665E"
@@ -37,7 +39,15 @@ const useStyles=makeStyles((theme)=>({
 formPhone:{
   lineHeight:3,
   color:"red",
-  textAlign:"center"
+  textAlign:"center",
+},
+land:{
+  position:"absolute",
+  top:"68%",
+  right:"0%",
+  zIndex:2000,
+  fontStyle:"italic",
+  fontWeight:"bold",
 }
 }))
 
@@ -56,26 +66,40 @@ const classes=useStyles()
        <Form></Form>
      </Grid>
      <Grid item xs={12} style={{textAlign:"center"}}>
+       <Link to='/test/catalog'>
        <Button disableElevation="false" size="large" className={classes.btnCatalog} variant="outlined" color="secondary"><CollectionsIcon></CollectionsIcon>&nbsp; Каталог туров</Button>
+       </Link>
      </Grid>
      <Grid item xs={12} sm={6} md={3}  style={{textAlign:"center"}}>
-       <Box>
+       <Box style={{position:"relative"}}>
          <img className={classes.photo} src={Turkey} width="100%" height="100%" alt="Turkey"></img>
+         <Typography variant="h6" className={classes.land}>
+           Турция
+         </Typography>
        </Box>
      </Grid>
      <Grid item xs={12} sm={6} md={3} style={{textAlign:"center"}}>
-     <Box>
+     <Box style={{position:"relative"}}>
          <img className={classes.photo} src={Egypt} width="100%" height="100%" alt="Egypt"></img>
+         <Typography variant="h6" className={classes.land}>
+           Египет
+         </Typography>
        </Box>
      </Grid>
      <Grid item xs={12} sm={6} md={3} style={{textAlign:"center"}}>
-     <Box>
+     <Box style={{position:"relative"}}>
          <img className={classes.photo} src={Greece} width="100%" height="100%" alt="Greece"></img>
+         <Typography variant="h6" className={classes.land}>
+           Греция
+         </Typography>
        </Box>
      </Grid>
      <Grid item xs={12} sm={6} md={3} style={{textAlign:"center"}}>
-     <Box>
+     <Box style={{position:"relative"}}>
          <img className={classes.photo} src={Spain} width="100%" height="100%" alt="Spain"></img>
+         <Typography variant="h6" className={classes.land}>
+           Испания
+         </Typography>
        </Box>
      </Grid>
      <Grid item xs={12}>
