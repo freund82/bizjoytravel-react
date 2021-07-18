@@ -37,7 +37,7 @@ export default function Footer() {
         <Toolbar>
           <Typography variant="subtitle2" className={classes.title} color="secondary">
           ООО Юридическое агентство "Бизнес и туризм" м.Автозаводская ул.Восточная д.11 <br></br>
-          График работы: ежедневно с 10-00 до 18-00 тел: +7(909) 681-58-12 <br></br>
+          График работы: ежедневно с 10-00 до 20-00 тел: <a href="tel:+7 (909)681-58-12">+7 (909)681-58-12</a> <br></br>
           <Box style={{display:"flex", alignItems:"center"}}>
           <CopyrightIcon></CopyrightIcon>&nbsp; Max Hook {new Date().getFullYear()}
           </Box> 
